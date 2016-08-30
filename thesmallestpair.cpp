@@ -10,20 +10,20 @@ using namespace std;
 
 int main(void) {
     int T; //test cases
-    list<int> lists;
+    
     cin>>T;
 
     int num;
     int num_count;
     int sum = 0;
     int brk = 0;
-
+    list<int> lists;
     cin >> num_count;
 
 
-    while (T != 0)
+    while (T--)
     {   lists.clear();
-        for (int i =0 ; i <= num_count ; i++){
+        for (int i =0 ; i <= num_count-1 ; i++){
             cin >> num;
             lists.PB(num);
         } 
@@ -33,8 +33,6 @@ int main(void) {
             sum = sum + *i;
         }
          cout<< sum <<endl;
-       
-    T--;
     }
 
     return 0;
