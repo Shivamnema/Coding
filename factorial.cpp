@@ -7,7 +7,7 @@ int main ( void) {
     cin>>num;
     fact = factorial(num);
     
-    cout<<"Factorial = "<<fact;
+    cout<<"Factorial = "<<fact; 
     return 0;
 }
 
