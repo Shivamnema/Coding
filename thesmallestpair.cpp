@@ -5,7 +5,7 @@
 #define PB push_back
 
 //thesmallestpair problem codechef. Date : 30th AUG 2016. 
-//Shivamnema05
+//Shivamnema05 //Solved.
 using namespace std;
 
 int main(void) {
