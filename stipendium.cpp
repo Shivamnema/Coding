@@ -30,24 +30,32 @@ int avg (vector<int> scores){
     return avg;
 }
 bool check (vector<int> scores , int average){
-    
+    bool flag = false; // means initiliting all the scores as negative ; or false.
+    for(int i=0; i < scores.size() ; i++){
+        if ((scores[i] <= 2 || scores[i] >= 4 ) && (average >= 4)) flag = true;
+    }
+    return flag;
 }
 int main(void) {
-    int no_of_exams, average=0;
-    
-    cin>>no_of_exams;
+    int T;
+    cin >> T;
+    while (T--)
+    {   int no_of_exams, average=0;
+        
+        cin>>no_of_exams;
 
-    vector<int> score_of_each_exam;
-    int score;
-    while (no_of_exams--){
-        cin>>score;
-        score_of_each_exam.pb(score);
+        vector<int> score_of_each_exam;
+        int score;
+        while (no_of_exams--){
+            cin>>score;
+            score_of_each_exam.pb(score);
+        }
+        average = avg(score_of_each_exam);
+        bool result = check(score_of_each_exam, average);
+        
+        if (result) cout<<"Yes"<<endl;
+        else cout<<"No"<<endl;
     }
-    average = avg(score_of_each_exam);
-    bool result = check(score_of_each_exam, average);
-    
-    if (result) cout<<"Yes"<<endl;
-    else cout<<"No"<<endl;
 
     return 0;
 }
