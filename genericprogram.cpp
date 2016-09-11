@@ -5,7 +5,7 @@
 
 
 #define pb push_back
-//[---PROBLEM NAME-----]]problem codechef. Date : [dATE hERE]. 
+//[---PROBLEM NAME-----]problem codechef. Date : [dATE hERE]. 
 //Shivamnema05
 using namespace std;
 
