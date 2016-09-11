@@ -8,17 +8,18 @@
 //[Version Control System]problem codechef. Date : [11 Sep 2016, 10:31AM]. 
 //Shivamnema05
 using namespace std;
+        int N; //no of source files
+        int M ; //no of ignored files
+        int K; //no of tracked files
 
-int N; //no of source files
-int M ; //no of ignored files
-int K; //no of tracked files
 int main(void) {
     int T, i;  
     cin >>T;
     while(T--){
+
         int scrfile[100] = {0};
         cin >>N >>M >>K;
-        int tracked, untracked,val;
+        int tracked =0 , untracked = 0,val = 0;
         
         for (i=0 ; i<M ; i++ ){
             cin >> val;   
